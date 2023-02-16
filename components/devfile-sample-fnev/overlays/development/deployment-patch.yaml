@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-fnev
+  namespace: alexeykazakov-dev-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:02892beaf66c6f88fe5350a4efc1f66145d89928a8f4626edb4c73693eefb9ea
+        name: my-nodejs
+        resources: {}
+status: {}
