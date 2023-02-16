@@ -1,0 +1,15 @@
+apiVersion: pipelinesascode.tekton.dev/v1alpha1
+kind: Repository
+metadata:
+  annotations:
+    appstudio.openshift.io/application: my-first-app
+    appstudio.openshift.io/component: devfile-sample-fnev
+    build.appstudio.openshift.io/build: "true"
+    build.appstudio.openshift.io/type: build
+    build.appstudio.openshift.io/version: "0.1"
+    pipelines.appstudio.openshift.io/type: build
+  creationTimestamp: null
+  name: devfile-sample-fnev
+  namespace: alexeykazakov-dev-tenant
+spec:
+  url: https://github.com/nodeshift-starters/devfile-sample
